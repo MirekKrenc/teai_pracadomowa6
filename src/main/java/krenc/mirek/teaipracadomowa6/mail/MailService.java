@@ -22,13 +22,13 @@ public class MailService {
     }
 
 //    @EventListener(ApplicationReadyEvent.class)
-    public void sendEmailTest(String emailAddres, String title, String message)
+    public void sendEmail(String emailAddres, String title, String message)
     {
         LocalDateTime localDateBefore = LocalDateTime.now();
         System.out.println("Start sending email " + localDateBefore);
         createAndSendEmailTLS(emailAddres, title, message);
         LocalDateTime localDateAfter = LocalDateTime.now();
-        System.out.println("After sending email " + localDateAfter);
+        System.out.println("Stop sending email " + localDateAfter);
     }
 
     private void createAndSendEmailTLS(String emailAddres, String title, String message) {

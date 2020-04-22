@@ -13,10 +13,10 @@ public class TeaiPracadomowa6Application {
         SpringApplication.run(TeaiPracadomowa6Application.class, args);
     }
 
-    @EventListener(ApplicationReadyEvent.class)
+    //@EventListener(ApplicationReadyEvent.class)
     @NewRecordAdded
     public void testAOPmethod()
     {
-        System.out.println("Metoda symuljaca dodanie nowego rekordu");
+        System.out.println("Metoda symulujaca dodanie nowego rekordu");
     }
 }
